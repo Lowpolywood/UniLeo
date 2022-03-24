@@ -8,10 +8,7 @@ namespace Voody.UniLeo
     /// <summary>
     /// This class handle global init to ECS World
     /// <summary>
-#if ENABLE_IL2CPP
-    [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.NullChecks, false)]
-    [Unity.IL2CPP.CompilerServices.Il2CppSetOption (Unity.IL2CPP.CompilerServices.Option.ArrayBoundsChecks, false)]
-#endif
+
     class WorldInitSystem : IEcsPreInitSystem, IEcsRunSystem, IEcsDestroySystem
     {
         EcsWorld _world = null;
